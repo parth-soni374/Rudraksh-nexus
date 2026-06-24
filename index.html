@@ -162,6 +162,14 @@
 
 <div class="stars">★★★★★</div>
 
+<button onclick="addToCart('Smart Watch',9999)">
+🛒 Add To Cart
+</button>
+
+<button onclick="addToWishlist('Smart Watch')">
+❤️ Wishlist
+</button>
+
 <button onclick="openProduct('Smart Watch','Premium GPS Smart Watch','₹9,999','smartwatch.jpg')">
 View Details
 </button>
@@ -178,6 +186,9 @@ View Details
 <div class="rating">⭐⭐⭐⭐⭐ 4.8/5</div>
 
 <div class="stars">★★★★★</div>
+
+<button onclick="addToCart('Gaming Combo',4999)">🛒 Add To Cart</button>
+<button onclick="addToWishlist('Gaming Combo')">❤️ Wishlist</button>
 
 <button onclick="openProduct('Gaming Combo','RGB Keyboard + Mouse Setup','₹4,999','gaming-combo.jpg')">
 View Details
@@ -196,6 +207,9 @@ View Details
 
 <div class="stars">★★★★★</div>
 
+<button onclick="addToCart('Gaming Laptop',89999)">🛒 Add To Cart</button>
+<button onclick="addToWishlist('Gaming Laptop')">❤️ Wishlist</button>
+
 <button onclick="openProduct('Gaming Laptop','RTX Powered Laptop','₹89,999','laptop.jpg')">
 View Details
 </button>
@@ -212,6 +226,9 @@ View Details
 <div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
 
 <div class="stars">★★★★★</div>
+
+<button onclick="addToCart('5G Smartphone',49999)">🛒 Add To Cart</button>
+<button onclick="addToWishlist('5G Smartphone')">❤️ Wishlist</button>
 
 <button onclick="openProduct('Premium Smartphone','Flagship Performance','₹49,999','smartphone.jpg')">
 View Details
@@ -230,11 +247,24 @@ View Details
 
 <div class="stars">★★★★★</div>
 
+<button onclick="addToCart('Wireless Earbuds',2999)">🛒 Add To Cart</button>
+<button onclick="addToWishlist('Wireless Earbuds')">❤️ Wishlist</button>
+
 <button onclick="openProduct('Wireless Earbuds','Noise Cancellation Earbuds','₹2,999','earbuds.jpg')">
 View Details
 </button>
         </div>
     </div>
+
+</section>
+
+<section class="cart-summary">
+
+<h2>🛒 Cart Summary</h2>
+
+<p>Total Items: <span id="cartItems">0</span></p>
+
+<p>Total Price: ₹<span id="cartTotal">0</span></p>
 
 </section>
 
