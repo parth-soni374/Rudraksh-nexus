@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudraksh Nexus by Parth Soni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+    <h1>RUDRAKSH NEXUS</h1>
+</div>
+
+
+       <nav class="navbar">
+    <div class="logo">RUDRAKSH NEXUS</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="loginBtn">Login</a></li>
+    </ul>
+
+    <div class="nav-icons">
+        <button id="wishlistBtn">❤️ Wishlist (<span id="wishCount">0</span>)</button>
+        <button id="cartBtn" onclick="location.href='#checkout'">
+🛒 Cart (<span id="cartCount">0</span>)
+</button>
+        <button id="loginBtn2">👤 Login</button>
+    </div>
+</nav>  
+
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>RUDRAKSH NEXUS</h1>
+            <h2>by Parth Soni</h2>
+            <p>Premium Tech Store Experience</p>
+
+            <section class="offers-banner">
+    🔥 MEGA SALE - Up To 50% OFF On Premium Tech Products 🔥
+</section>
+
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+
+        <div class="hero-showcase">
+
+    <div class="hero-slide active">
+        <img src="images/smartwatch.jpg" alt="Smart Watch">
+    </div>
+
+    <div class="hero-slide">
+        <img src="images/earbuds.jpg" alt="Earbuds">
+    </div>
+
+    <div class="hero-slide">
+        <img src="images/laptop.jpg" alt="Laptop">
+    </div>
+
+    <div class="hero-slide">
+        <img src="images/smartphone.jpg" alt="Smartphone">
+    </div>
+
+</div>
+    </section>
+
+    
+
+<section class="stats">
+
+<div class="stat-box">
+    <h2 id="customers">0</h2>
+    <p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+    <h2 id="orders">0</h2>
+    <p>Products Sold</p>
+</div>
+
+<div class="stat-box">
+    <h2 id="rating">0</h2>
+    <p>Average Rating</p>
+</div>
+</section>
+               
+
+<section class="offer-banner">
+    <h2>🔥 Special Launch Offer 🔥</h2>
+    <p>Up to 50% OFF on Selected Tech Products</p>
+</section>
+
+<section id="reviews" class="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-slider">
+
+<div class="review-box active-review">
+★★★★★ Amazing Products & Design
+
+</div>
+
+<div class="review-box">
+★★★★★ Best Tech Store Experience Ever
+
+</div>
+
+<div class="review-box">
+★★★★★ Premium Quality & Fast Delivery
+
+</div>
+
+<div class="review-box">
+★★★★★ Black & Gold Theme Looks Awesome
+
+</div>
+
+</div>
+
+</section>
+
+<section id="products" class="premium-products">
+
+    <div class="product-controls">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Products..."
+    >
+
+    <select id="productFilter">
+        <option value="all">All Products</option>
+        <option value="watch">Smart Watch</option>
+        <option value="gaming">Gaming</option>
+        <option value="laptop">Laptop</option>
+        <option value="phone">Smartphone</option>
+        <option value="audio">Earbuds</option>
+    </select>
+
+</div>
+
+    <div class="product-slider">
+
+    <h1 class="product-title">Featured Tech Products</h1>
+
+
+    <div class="product" data-category="watch">
+        <img src="images/smartwatch.jpg" alt="Smart Watch">
+        <div class="product-info">
+            <h2>Smart Watch</h2>
+            <p>Premium GPS Smart Watch</p>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
+
+<div class="stars">★★★★★</div>
+
+<button onclick="openProduct('Smart Watch','Premium GPS Smart Watch','₹9,999','images/smartwatch.jpg')">
+View Details
+</button>
+        </div>
+    </div>
+
+
+    <div class="product" data-category="gaming">
+        <img src="images/gaming-combo.jpg" alt="Gaming Combo">
+        <div class="product-info">
+            <h2>Gaming Combo</h2>
+            <p>RGB Keyboard + Mouse Setup</p>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.8/5</div>
+
+<div class="stars">★★★★★</div>
+
+<button onclick="openProduct('Gaming Combo','RGB Keyboard + Mouse Setup','₹4,999','images/gaming-combo.jpg')">
+View Details
+</button>
+        </div>
+    </div>
+
+
+    <div class="product" data-category="laptop">
+        <img src="images/laptop.jpg" alt="Laptop">
+        <div class="product-info">
+            <h2>Gaming Laptop</h2>
+            <p>High Performance Laptop</p>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.8/5</div>
+
+<div class="stars">★★★★★</div>
+
+<button onclick="openProduct('Gaming Laptop','RTX Powered Laptop','₹89,999','images/laptop.jpg')">
+View Details
+</button>
+        </div>
+    </div>
+
+
+    <div class="product" data-category="phone">
+        <img src="images/smartphone.jpg" alt="Smartphone">
+        <div class="product-info">
+            <h2>5G Smartphone</h2>
+            <p>Fast & Powerful Device</p>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.9/5</div>
+
+<div class="stars">★★★★★</div>
+
+<button onclick="openProduct('Premium Smartphone','Flagship Performance','₹49,999','images/smartphone.jpg')">
+View Details
+</button>  
+        </div>
+    </div>
+
+
+    <div class="product" data-category="audio">
+         <img src="images/earbuds.jpg" alt="Earbuds">
+         <div class="product-info">
+            <h2>Wireless Earbuds</h2>
+            <p>Premium Sound Quality</p>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.7/5</div>
+
+<div class="stars">★★★★★</div>
+
+<button onclick="openProduct('Wireless Earbuds','Noise Cancellation Earbuds','₹2,999','images/earbuds.jpg')">
+View Details
+</button>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="checkout" class="checkout">
+
+<h1>Premium Checkout</h1>
+
+<div class="checkout-box">
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Delivery Address">
+
+<input type="text" placeholder="Mobile Number">
+
+<button onclick="paymentSuccess()">
+Proceed To Payment
+</button>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Rudraksh Nexus</h2>
+
+<div class="contact-box">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button onclick="sendMessage()">Send Message</button>
+
+</div>
+
+<div class="contact-info">
+<p>📧 Email: rudrakshnexus@email.com</p>
+<p>📞 Phone: +91 XXXXX XXXXX</p>
+<p>📍 India</p>
+</div>
+
+</section>
+    
+ <audio id="bgMusic" loop >
+    <source src="music/theme.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">🎵 Music</button> 
+
+<div class="login-popup" id="loginPopup">
+
+    <div class="login-box">
+        <span id="closeLogin">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Username">
+
+        <input type="password" placeholder="Password">
+
+        <button>Login</button>
+
+    </div>
+
+</div>     
+          
+
+ <footer class="footer">
+    <div class="footer-content">
+
+        <h2>RUDRAKSH NEXUS</h2>
+        <p>Premium Tech Store By Parth Soni</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">▶ YouTube</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Rudraksh Nexus By Parth Soni. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<div class="product-popup" id="productPopup">
+
+    <div class="popup-box">
+
+        <span id="closePopup">✖</span>
+
+        <img id="popupImg" src="" alt="Product">
+
+        <h2 id="popupTitle"></h2>
+
+        <p id="popupPrice"></p>
+
+        <p id="popupDesc"></p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+</div>
+
+<div id="cartPopup" class="cart-popup">
+    ✅ Product Added To Cart
+</div>
+
+<div id="successPopup" class="success-popup">
+
+<div class="success-box">
+
+<h1>✅ Payment Successful</h1>
+
+<p>
+Thank You For Shopping At Rudraksh Nexus
+</p>
+
+<button onclick="closeSuccess()">
+Continue Shopping
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+    
+    
+</html>
