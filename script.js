@@ -230,3 +230,74 @@ function sendMessage(){
     alert("Message Sent Successfully!");
 }
 
+let totalPrice = 0;
+
+function addToCart(product, price){
+
+    cart++;
+
+    totalPrice += price;
+
+    document.getElementById("cartCount").innerText = cart;
+
+    document.getElementById("cartItems").innerText = cart;
+
+    document.getElementById("cartTotal").innerText = totalPrice;
+
+    localStorage.setItem("cartCount", cart);
+
+    localStorage.setItem("cartTotal", totalPrice);
+
+    alert(product + " Added To Cart");
+}
+
+function addToWishlist(product){
+
+    wish++;
+
+    document.getElementById("wishCount").innerText = wish;
+
+    localStorage.setItem("wishCount", wish);
+
+    alert(product + " Added To Wishlist");
+}
+
+window.onload = function(){
+
+    let savedCart =
+    localStorage.getItem("cartCount");
+
+    let savedWish =
+    localStorage.getItem("wishCount");
+
+    let savedTotal =
+    localStorage.getItem("cartTotal");
+
+    if(savedCart){
+
+        cart = parseInt(savedCart);
+
+        document.getElementById("cartCount").innerText = cart;
+
+        document.getElementById("cartItems").innerText = cart;
+
+    }
+
+    if(savedWish){
+
+        wish = parseInt(savedWish);
+
+        document.getElementById("wishCount").innerText = wish;
+
+    }
+
+    if(savedTotal){
+
+        totalPrice = parseInt(savedTotal);
+
+        document.getElementById("cartTotal").innerText = totalPrice;
+
+    }
+
+};
+
