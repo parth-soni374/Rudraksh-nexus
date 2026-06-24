@@ -765,4 +765,28 @@ body{
     margin-top:30px;
     font-size:18px;
 }
+
+.cart-summary{
+
+background:#111;
+
+border:2px solid gold;
+
+padding:20px;
+
+margin:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+}
+
+.cart-summary h2{
+
+color:gold;
+
+margin-bottom:15px;
+
+}
     
